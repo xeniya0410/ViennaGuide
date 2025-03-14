@@ -16,6 +16,6 @@ class PlacesViewModel : ViewModel() {
     fun loadPlaces(category: String) {
         val filteredPlaces = PlacesRepository.getPlacesByCategory(category)
         _places.value = filteredPlaces
-        Log.d("PlacesViewModel", "Загруженные места: $filteredPlaces") // ✅ Логируем загруженные данные
+        Log.d("PlacesViewModel", "Загруженные места: $filteredPlaces") 
     }
 }
