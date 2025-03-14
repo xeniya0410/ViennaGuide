@@ -12,12 +12,12 @@ object PlacesRepository {
     )
 
     fun getPlacesByCategory(category: String): List<Place> {
-        Log.d("PlacesRepository", "Запрошенная категория: $category") // ✅ Логируем категорию
-        Log.d("PlacesRepository", "Все доступные места: $places") // ✅ Логируем весь список
+        Log.d("PlacesRepository", "Запрошенная категория: $category") 
+        Log.d("PlacesRepository", "Все доступные места: $places")
 
         val filteredPlaces = places.filter { it.category == category }
 
-        Log.d("PlacesRepository", "Отфильтрованные места: $filteredPlaces") // ✅ Логируем результат
+        Log.d("PlacesRepository", "Отфильтрованные места: $filteredPlaces") 
 
         return filteredPlaces
     }
